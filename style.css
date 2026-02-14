@@ -96,12 +96,31 @@ body {
     position: absolute;
     top: 0;
     width: 80%;
-    height: 80%;
+    height: 80%;               /* fixed height for scrolling */
     background-color: #FFF5F7;
     border-radius: 15px;
     z-index: 2;
     transition: 0.5s;
     transform: translateY(0);
+
+    overflow-y: auto;           /* allows vertical scrolling */
+    overflow-x: hidden;         /* prevent horizontal scroll */
+    padding: 10px;              /* some inner spacing */
+    box-sizing: border-box;
+}
+
+.letter::-webkit-scrollbar {
+    width: 6px;
+}
+
+.letter::-webkit-scrollbar-thumb {
+    background-color: #D43F5E;
+    border-radius: 3px;
+}
+
+.letter::-webkit-scrollbar-track {
+    background: #FFF5F7;
+    border-radius: 3px;
 }
 
 .letter p {
@@ -111,6 +130,7 @@ body {
     color: #D43F5E;
     font-weight: bold;
 }
+
 
 .buttons {
     margin-top: 20px;
