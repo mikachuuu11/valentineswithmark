@@ -94,19 +94,20 @@ body {
 
 .letter {
     position: absolute;
-    top: 0;
-    width: 80%;
-    height: 80%;
-    background-color: #FFF5F7;
-    border-radius: 15px;
-    z-index: 2;
-    transition: 0.5s;
-    transform: translateY(0);
+    width: 85%;
+    height: 85%;
+    top: 7%;
+    left: 7%;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;   /* ✨ IMPORTANT */
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .letter p {
     text-align: center;
-    font-size: 24px;
+    font-size: 18px;
     margin-top: 30px;
     color: #D43F5E;
     font-weight: bold;
